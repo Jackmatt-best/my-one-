@@ -8,7 +8,7 @@ export default function Header() {
     };
     return (
       <>
-          return <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
+        <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
               <div className="container mx-auto px-4 py-4 flex justify-between items-center">
               <div className="text-2xl font-bold text-gray-800">Portfolio</div>
              {/* Mobile menu button */}
