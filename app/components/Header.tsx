@@ -1,6 +1,7 @@
 'use client';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import Link from "next/link";
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => {
@@ -17,17 +18,17 @@ export default function Header() {
           </button>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Skills', 'Projects', 'Contact'].map(item => <a key={item} href={`#${item.toLowerCase()}`} className="text-gray-600 hover:text-gray-900 transition-colors">
+            {['Home', 'About', 'Skills', 'Projects', 'Contact'].map(item => <Link key={item} href={`#${item.toLowerCase()}`} className="text-gray-600 hover:text-blue-900 hover:underline transition-colors">
                 {item}
-              </a>)}
+              </Link>)}
           </nav>
         </div>
         {/* Mobile Navigation */}
         {isMenuOpen && <div className="md:hidden bg-white py-2 px-4 shadow-md">
             <nav className="flex flex-col space-y-3">
-              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map(item => <a key={item} href={`#${item.toLowerCase()}`} className="text-gray-600 hover:text-gray-900 py-2 transition-colors" onClick={toggleMenu}>
+              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map(item => <Link key={item} href={`#${item.toLowerCase()}`} className="text-gray-600 hover:text-blue-900 hover:underline py-2 transition-colors" onClick={toggleMenu}>
                   {item}
-                </a>)}
+                </Link>)}
             </nav>
           </div>}
       </header>;
