@@ -3,20 +3,12 @@ import { CodeIcon, LayoutIcon, DatabaseIcon, BrushIcon } from 'lucide-react';
 export default function SkillsSection (){
   const skills = [{
     category: 'Frontend',
-    icon: <LayoutIcon size={24} className="text-indigo-600" />,
-    items: ['HTML5', 'CSS3', 'JavaScript', 'React', 'TypeScript', 'Tailwind CSS']
+    icon: <LayoutIcon size={24} className="text-blue-800" />,
+    items: ['HTML5', 'CSS3', 'JavaScript', 'React', 'jQuery', 'TypeScript', 'Python', 'Tailwind CSS']
   }, {
-    category: 'Backend',
-    icon: <ServerIcon size={24} className="text-indigo-600" />,
-    items: ['Node.js', 'Express', 'RESTful APIs', 'GraphQL', 'Authentication', 'Cloud Functions']
-  }, {
-    category: 'Database',
-    icon: <DatabaseIcon size={24} className="text-indigo-600" />,
-    items: ['MongoDB', 'Firebase', 'SQL', 'PostgreSQL', 'Redis', 'Data Modeling']
-  }, {
-    category: 'Tools & Others',
-    icon: <CodeIcon size={24} className="text-indigo-600" />,
-    items: ['Git', 'GitHub', 'VS Code', 'Docker', 'CI/CD', 'Agile/Scrum']
+    category: 'Designing Tools & Other Tools',
+    icon: <CodeIcon size={24} className="text-blue-800" />,
+    items: ['Figma', 'Framer','Git', 'GitHub','Saas', 'VS Code',]
   }];
   return <section id="skills" className="py-20 bg-gray-50 w-full">
       <div className="container mx-auto px-4">
@@ -26,11 +18,11 @@ export default function SkillsSection (){
           </h2>
           <div className="w-16 h-1 bg-indigo-600 mx-auto"></div>
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
-            I've worked with a range of technologies in the web development
-            world, from backend to design.
+            I have worked with and know a range of technologies and
+            Designing tools that I am Confortable with and Mastered them.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {skills.map((skillGroup, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-center mb-4">
                 {skillGroup.icon}

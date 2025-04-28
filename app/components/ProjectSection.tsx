@@ -1,4 +1,5 @@
 import { ExternalLinkIcon, } from 'lucide-react';
+import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
 
 export default function  ProjectsSection(){
@@ -59,20 +60,20 @@ export default function  ProjectsSection(){
                     </span>)}
                 </div>
                 <div className="flex space-x-3">
-                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center text-indigo-600 hover:text-indigo-800">
+                  <Link href={project.liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center text-indigo-600 hover:text-indigo-800">
                     <ExternalLinkIcon size={16} className="mr-1" /> Live Demo
-                  </a>
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 hover:text-gray-900">
+                  </Link>
+                  <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 hover:text-gray-900">
                     <FaGithub size={16} className="mr-1" /> Code
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>)}
         </div>
         <div className="text-center mt-12">
-          <a href="#" className="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
+          <Link href="#" className="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
             View All Projects
-          </a>
+          </Link>
         </div>
       </div>
     </section>;

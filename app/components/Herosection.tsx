@@ -5,28 +5,30 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-12 md:mb-0">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Hi, I'm <span className="text-indigo-600">Your Name</span>
+            Hi, I'm <span className="text-blue-800">Jackmatt</span>
           </h1>
           <p className="text-xl text-gray-700 mb-8 max-w-lg">
-            A passionate web developer creating beautiful and functional
-            websites with modern technologies.
+            A passionate UI/UX designer and Frontend Developer aiming on
+            solving complex problems and creating beautiful and functional
+            UI/UX designs and websites with modern tools and technologies
+            with the user first psychology and usability in mind.
           </p>
           <div className="flex space-x-4 mb-8">
-            <Link href="#contact" className="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
+            <Link href="#contact" className="px-6 py-3 bg-blue-800 text-white rounded-lg hover:bg-yellow-500 transition-colors">
               Get in Touch
             </Link>
-            <Link href="#projects" className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition-colors">
+            <Link href="#projects" className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-blue-800 transition-colors">
               View My Work
             </Link>
           </div>
           <div className="flex space-x-4">
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+            <Link href="https://github.com/Jackmatt-best" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-800">
               <FaGithub size={24} />
             </Link>
-            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+            <Link href="https://linkedin.com/Jackson Mathew" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-800">
               <FaLinkedin size={24} />
             </Link>
-            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+            <Link href="https://twitter.com/official-jackmatt" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-800">
               <FaTwitter size={24} />
             </Link>
           </div>

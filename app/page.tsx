@@ -1,9 +1,11 @@
-import { Contact } from "lucide-react";
+
 import AboutSection from "./components/AboutSection";
 import Header from "./components/Header";
 import HeroSection from "./components/Herosection";
 import ProjectsSection from "./components/ProjectSection";
 import SkillsSection from "./components/SkillsSection";
+import Footer from "./components/Footer";
+import ContactSection from "./components/ContactSection";
 
 export default function Page() {
   return (
@@ -15,7 +17,8 @@ export default function Page() {
             <AboutSection />
             <SkillsSection />
             <ProjectsSection />
-            <Contact />
+            <ContactSection />
+            <Footer />
           </main>
         </div>
     </>
