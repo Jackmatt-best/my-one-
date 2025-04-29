@@ -86,15 +86,17 @@ export default function AboutSection() {
                   <p className="text-blue-800">Available for freelance & Remote full time jobs</p>
                 </div>
               </div>
-              <div className="mt-8">
-                <Link href="#contact" className="px-6 py-3 bg-blue-800 text-white rounded-lg hover:bg-yellow-500 transition-colors">
+              <div className="flex">
+              <div className="mt-8 mr-auto">
+                <Link href="#contact" className="px-6 py-3 bg-blue-800 hover:text-black text-white rounded-lg hover:bg-yellow-500 transition-colors">
                   Contact Me
                 </Link>
               </div>
               <div className="mt-8">
-                <Link href="#contact" className="px-6 py-3 bg-blue-800 text-white rounded-lg hover:bg-yellow-500 transition-colors">
+                <Link href="#contact" className="px-6 py-3 bg-blue-800 hover:text-black text-white rounded-lg hover:bg-yellow-500 transition-colors">
                   View full story About me
                 </Link>
+              </div>
               </div>
             </div>
           </div>
