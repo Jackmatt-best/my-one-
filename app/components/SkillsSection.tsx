@@ -2,7 +2,7 @@ import { CodeIcon, LayoutIcon, DatabaseIcon, BrushIcon } from 'lucide-react';
 
 export default function SkillsSection (){
   const skills = [{
-    category: 'Frontend',
+    category: 'Programming Languages, Library and Frameworks',
     icon: <LayoutIcon size={24} className="text-blue-800" />,
     items: ['HTML5', 'CSS3', 'JavaScript', 'React.js','Next.js', 'jQuery', 'TypeScript', 'Python','Bootstrap', 'Tailwind CSS']
   }, {
